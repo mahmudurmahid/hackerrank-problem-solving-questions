@@ -11,7 +11,7 @@ def birthday_cake_candles(candles):
     print(candle_counter)
     max_candle_counter = 0
 
-    # find out which candle number has the most occurrences
+    # find out which candle number has the most occurrences in the candle_counter list
     for candle_num in candle_counter:
         counter = candle_counter[candle_num]
 
