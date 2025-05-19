@@ -1,6 +1,5 @@
 def staircase(n):
     x = 0
-    figure = []
 
     while x <= n:
         spaces = " " * (n - x)
