@@ -5,8 +5,8 @@ def diagonal_difference(arr):
     n = len(arr)
 
     for i in range(n):
-        l_to_r += arr[i][i]
-        r_to_l += arr[i][n - 1 - i]
+        l_to_r += arr[i][i] # provides arr[row][column]
+        r_to_l += arr[i][n - 1 - i] # provides arr[row][column]
 
     difference = abs(l_to_r - r_to_l)
     return difference
