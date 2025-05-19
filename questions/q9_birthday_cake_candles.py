@@ -20,6 +20,19 @@ def birthday_cake_candles(candles):
     
     return max_candle_count
 
+# althernative solution:
+def alt_birthday_cake_candles(candles):
+    tallest = max(candles)
+    tallest_freq = 0
+
+    for candle in candles:
+        if candle == tallest:
+            tallest_freq += 1
+    
+    return tallest_freq
+
 candles_arr = [3, 2, 1, 3, 7, 7, 7, 7]
 result = birthday_cake_candles(candles_arr)
 print(result)
+alt_result = alt_birthday_cake_candles(candles_arr)
+print(alt_result)
