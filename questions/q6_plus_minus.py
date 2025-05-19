@@ -3,8 +3,6 @@ def plus_minus(arr):
     negative_int = 0
     zero_int = 0
 
-    total = len(arr)
-
     for i in range(len(arr)):
         if arr[i] > 0:
             positive_int += 1
@@ -13,6 +11,31 @@ def plus_minus(arr):
         else:
             zero_int += 1
     
+    total = len(arr)
+
+    positive_fraction = positive_int / total
+    negative_fraction = negative_int / total
+    zero_fraction = zero_int / total
+
+    return positive_fraction, negative_fraction, zero_fraction
+
+# alternative solution
+
+def alt_plus_minus(arr):
+    positive_int = 0
+    negative_int = 0
+    zero_int = 0
+
+    for i in arr:
+        if i > 0:
+            positive_int += 1
+        elif i < 0:
+            negative_int += 1
+        else:
+            zero_int += 1
+
+    total = len(arr)
+
     positive_fraction = positive_int / total
     negative_fraction = negative_int / total
     zero_fraction = zero_int / total
@@ -22,3 +45,5 @@ def plus_minus(arr):
 arr = [-4, 3, -9, 0, 4, 1]
 result = plus_minus(arr)
 print(result)
+alt_result = alt_plus_minus(arr)
+print(alt_result)
