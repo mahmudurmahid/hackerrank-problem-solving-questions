@@ -21,6 +21,14 @@ def kangaroo(x1, v1, x2, v2):
         # else: # k1_landing_spots[i] != k2_landing_spots[j]
     return "NO" # outside the loop to check for all pairs [not just the first pair]
 
+# alternative solution
+def alt_kangaroo(x1, v1, x2, v2):
+    if v1 == v2:
+        return "YES" if x1 == x2 else "NO"
+    if (x1 - x2) % (v2 - v1) == 0 and (v1 - v2) != 0:
+        return "YES"
+    return "NO"
+
 
 x1 = 0
 v1 = 3
@@ -28,3 +36,5 @@ x2 = 4
 v2 = 2
 result = kangaroo(x1, v1, x2, v2)
 print(result)
+alt_result = alt_kangaroo(x1, v1, x2, v2)
+print(alt_result)
