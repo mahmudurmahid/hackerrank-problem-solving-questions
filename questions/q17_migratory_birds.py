@@ -21,7 +21,6 @@ def migratory_birds(ar):
     return max_bird_id
 
 
-
 arr = [1, 1, 2, 2, 3, 2]
 result = migratory_birds(arr)
 print(result)
