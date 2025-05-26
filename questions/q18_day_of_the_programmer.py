@@ -18,7 +18,7 @@ def day_of_programmer(year):
         else:
             calendar_days = 365
     # special case for year 1918 [skipped feb 1st - 13th to change from Julian to Gregorian]
-    elif year == 1918:
+    else: # year == 1918:
         calendar_days = 352
     
     # date returned
