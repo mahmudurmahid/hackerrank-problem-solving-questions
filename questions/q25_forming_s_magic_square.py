@@ -21,9 +21,6 @@ def forming_magic_square(s):
     
     return min_cost
 
-    
-
-
 s = [
     [5, 3, 4],
     [1, 5, 8],
