@@ -13,9 +13,9 @@ def plus_minus(arr):
     
     total = len(arr)
 
-    positive_fraction = positive_int / total
-    negative_fraction = negative_int / total
-    zero_fraction = zero_int / total
+    positive_fraction = round(positive_int / total, 6)
+    negative_fraction = round(negative_int / total, 6)
+    zero_fraction = round(zero_int / total, 6)
 
     return positive_fraction, negative_fraction, zero_fraction
 
@@ -35,9 +35,9 @@ def alt_plus_minus(arr):
 
     total = len(arr)
 
-    positive_fraction = positive_int / total
-    negative_fraction = negative_int / total
-    zero_fraction = zero_int / total
+    positive_fraction = round(positive_int / total, 6)
+    negative_fraction = round(negative_int / total, 6)
+    zero_fraction = round(zero_int / total, 6)
 
     return positive_fraction, negative_fraction, zero_fraction
 
