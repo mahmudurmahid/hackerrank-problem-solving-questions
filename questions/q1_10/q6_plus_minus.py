@@ -20,7 +20,6 @@ def plus_minus(arr):
     return positive_fraction, negative_fraction, zero_fraction
 
 # alternative solution
-
 def alt_plus_minus(arr):
     positive_int = 0
     negative_int = 0
