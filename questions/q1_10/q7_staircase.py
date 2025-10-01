@@ -10,7 +10,7 @@ def staircase(n):
 # alternative solution
 def staircase(n):
     y = 1
-
+    
     while y != (n + 1):
         spaces = " " * (n - y)
         hashes = "#" * y
