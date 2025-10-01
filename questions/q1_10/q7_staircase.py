@@ -1,6 +1,6 @@
 def staircase(n):
     x = 0
-
+    
     while x <= n:
         spaces = " " * (n - x)
         hashes = "#" * x
@@ -10,7 +10,7 @@ def staircase(n):
 # alternative solution
 def staircase(n):
     y = 1
-    
+
     while y != (n + 1):
         spaces = " " * (n - y)
         hashes = "#" * y
