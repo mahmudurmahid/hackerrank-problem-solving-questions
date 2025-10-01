@@ -20,4 +20,4 @@ result = simple_array_sum(arr)
 print(result)
 
 alt_result = alt_simple_array_sum(arr)
-print(alt_result)
+print(alt_result
