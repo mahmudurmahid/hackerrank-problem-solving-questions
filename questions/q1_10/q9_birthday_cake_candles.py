@@ -32,7 +32,7 @@ def alt_birthday_cake_candles(candles):
     return tallest_freq
 
 # second alternative solution
-def alt2_birthday_cake_candles(candles):
+def alt2_birthday_cake_candles(arr):
     tallest_candle = 0
     num_tallest_candle = 0
 
