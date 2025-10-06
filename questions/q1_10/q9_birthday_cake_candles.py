@@ -31,8 +31,29 @@ def alt_birthday_cake_candles(candles):
     
     return tallest_freq
 
+# second alternative solution
+def alt2_birthday_cake_candles(candles):
+    tallest_candle = 0
+    num_tallest_candle = 0
+
+    for i in arr:
+        if i > tallest_candle:
+            tallest_candle = i
+        else:
+            tallest_candle = tallest_candle
+    
+    for j in arr:
+        if j == tallest_candle:
+            num_tallest_candle += 1
+        else:
+            num_tallest_candle = num_tallest_candle
+    
+    return num_tallest_candle
+
 candles_arr = [3, 2, 1, 3, 7, 7, 7, 7]
 result = birthday_cake_candles(candles_arr)
 print(result)
 alt_result = alt_birthday_cake_candles(candles_arr)
 print(alt_result)
+alt2_result = alt2_birthday_cake_candles(candles_arr)
+pritn(alt2_result)
