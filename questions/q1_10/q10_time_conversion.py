@@ -46,9 +46,9 @@ def alt2_time_conversion(s):
     return military_time
 
 s = "12:05:00PM"
-# result = time_conversion(s)
-# print(result)
-# alt_result = alt_time_conversion(s)
-# print(alt_result)
+result = time_conversion(s)
+print(result)
+alt_result = alt_time_conversion(s)
+print(alt_result)
 alt2_result = alt2_time_conversion(s)
 print(alt2_result)
