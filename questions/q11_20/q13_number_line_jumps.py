@@ -29,12 +29,17 @@ def alt_kangaroo(x1, v1, x2, v2):
         return "YES"
     return "NO"
 
+# second alternative solution
+def alt2_kangaroo(x1, v1, x2, v2):
+
 
 x1 = 0
 v1 = 3
 x2 = 4
 v2 = 2
+
 result = kangaroo(x1, v1, x2, v2)
 print(result)
 alt_result = alt_kangaroo(x1, v1, x2, v2)
 print(alt_result)
+alt2_result = alt2_kangaroo(x1, v1, x2, v2)
