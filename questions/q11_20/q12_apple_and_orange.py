@@ -17,10 +17,6 @@ def count_apples_and_oranges(s, t, a, b, apples, oranges):
     fruit_landed = [apples_landed, oranges_landed]
     return fruit_landed
 
-# alternative solution
-def alt_count_apples_and_oranges(s, t, a, b, apples, oranges):
-    
-
 s = 7
 t = 10
 a = 4
