@@ -9,8 +9,13 @@ def birthday(s, d, m):
     
     return num_combinations
 
+def alt_birthday(s, d, m):
+
+
 s = [2, 2, 1, 3, 2]
 d = 4
 m = 2
 result = birthday(s, d, m)
 print(result)
+alt_result = alt_birthday(s, d, m)
+print(alt_result)
