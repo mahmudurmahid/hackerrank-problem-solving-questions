@@ -31,6 +31,11 @@ def alt_kangaroo(x1, v1, x2, v2):
 
 # second alternative solution
 def alt2_kangaroo(x1, v1, x2, v2):
+    if v1 <= v2:
+        return "NO"
+    if (x2 - x1) % (v1 - v2) == 0:
+        return "YES"
+    return "NO"
 
 
 x1 = 0
@@ -43,3 +48,4 @@ print(result)
 alt_result = alt_kangaroo(x1, v1, x2, v2)
 print(alt_result)
 alt2_result = alt2_kangaroo(x1, v1, x2, v2)
+print(alt2_result)
