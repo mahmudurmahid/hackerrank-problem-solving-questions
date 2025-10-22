@@ -20,7 +20,21 @@ def breaking_records(scores):
     return score_record
 
 def alt_breaking_records(scores):
+    highest_score = scores[0]
+    lowest_score = scores[0]
+
+    highest_record_broken = 0
+    lowest_record_broken = 0
+
+    for score in scores:
+        if score > highest_score:
+            highest_record_broken += 1
+            highest_score = score
+        if score < lowest_score:
+            lowest_record_broken += 1
+            lowest_score = score
     
+    return highest_record_broken, lowest_record_broken
 
 
 scores_arr = [12, 24, 10, 24]
