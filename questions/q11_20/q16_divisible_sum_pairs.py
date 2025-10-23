@@ -10,7 +10,12 @@ def divisible_sum_pairs(ar, k):
     
     return num_pairs
 
+def alt_divisible_sum_pairs(ar, k):
+    pass
+
 arr = [1, 3, 2, 6, 1, 2]
 k = 3
 result = divisible_sum_pairs(arr, k)
 print(result)
+alt_result = alt_divisible_sum_pairs(arr, k)
+print(alt_result)
