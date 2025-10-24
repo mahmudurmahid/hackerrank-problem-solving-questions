@@ -17,9 +17,9 @@ def migratory_birds(ar):
         elif birds_dict[bird_value] == max_bird_count: # in case of tie choose lowest bird key in dict
             max_bird_id == min(max_bird_id, bird_value)
 
-    
     return max_bird_id
 
+# alternative solution
 def alt_migratory_birds(ar):
     birds_dict = {}
 
