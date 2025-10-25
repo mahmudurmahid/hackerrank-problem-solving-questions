@@ -29,10 +29,6 @@ def day_of_programmer(year):
     elif calendar_days == 352:
         return f"26.09.{year}"
 
-# alternative solution
-def alt_day_of_programmer(year):
-    pass
-
 year1 = 1600
 year2 = 2004
 
@@ -40,8 +36,3 @@ result1 = day_of_programmer(year1)
 result2 = day_of_programmer(year2)
 print(result1)
 print(result2)
-
-alt_result1 = alt_day_of_programmer(year1)
-alt_result2 = alt_day_of_programmer(year2)
-print(alt_result1)
-print(alt_result2)
