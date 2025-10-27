@@ -6,12 +6,22 @@ def page_count(n, p):
         return front_page
     else:
         return back_page
-    
-n = 5
-p = 4
-result = page_count(n,p)
-print(result)
-alt_n = 6
-alt_p = 2
-alt_result = page_count(alt_n, alt_p)
-print(alt_result)
+
+# alternative solution
+def alt_page_count(n, p):
+    pass
+
+n1 = 5
+p1 = 4
+n2 = 6
+p2 = 2
+
+result1 = page_count(n1,p1)
+result2 = page_count(n2, p2)
+print(result1)
+print(result2)
+
+alt_result1 = page_count(n1,p1)
+alt_result2 = page_count(n2, p2)
+print(alt_result1)
+print(alt_result2)
