@@ -14,6 +14,12 @@ def sock_merchant(ar):
     
     return total_pairs
 
+# alternative solution
+def alt_sock_merchant(ar):
+    pass
+
 arr = [1, 1, 3, 1, 2, 1, 3, 3, 3, 3]
 result = sock_merchant(arr)
 print(result)
+alt_result = alt_sock_merchant(ar)
+print(alt_result)
