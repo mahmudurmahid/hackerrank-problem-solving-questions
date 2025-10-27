@@ -12,7 +12,13 @@ def bon_appetit(bill, k, b):
 
 # alternative solution
 def alt_bon_appetit(bill, k, b):
-    pass
+    total = sum(bill)
+    b_actual = (total - bill[k]) // 2
+
+    if b_actual == b:
+        return "Bon Appetit"
+    else:
+        return (b - b_actual)
 
 bill = [3, 10, 2, 9]
 k = 1
