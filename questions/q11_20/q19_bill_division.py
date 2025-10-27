@@ -10,12 +10,15 @@ def bon_appetit(bill, k, b):
     else:
         return overpayment
 
+# alternative solution
+def alt_bon_appetit(bill, k, b):
+    pass
 
 bill = [3, 10, 2, 9]
 k = 1
 b = 12
+
 result = bon_appetit(bill, k, b)
 print(result)
-alt_b = 7
-alt_result = bon_appetit(bill, k, alt_b)
+alt_result = alt_bon_appetit(bill, k, b)
 print(alt_result)
