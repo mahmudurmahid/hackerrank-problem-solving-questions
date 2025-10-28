@@ -9,7 +9,10 @@ def page_count(n, p):
 
 # alternative solution
 def alt_page_count(n, p):
-    pass
+    if not n % 2:
+        n += 1
+    
+    return min(p // 2, (n - p) // 2)
 
 n1 = 5
 p1 = 4
