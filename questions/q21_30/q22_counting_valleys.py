@@ -13,7 +13,13 @@ def counting_valleys(steps, path):
 
     return valley
 
+# alternative solution
+def alt_counting_valleys(steps, path):
+    pass
+
 steps = 8
 path = ["U", "D", "D", "D", "U", "D", "U", "U"]
 result = counting_valleys(steps, path)
 print(result)
+alt_result = alt_counting_valleys(steps, path)
+print(alt_result)
