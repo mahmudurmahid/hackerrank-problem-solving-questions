@@ -21,10 +21,8 @@ def alt_counting_valleys(steps, path):
     for i in path:
         if i == "U":
             sea_level += 1
-            # print(f"step {sea_level}")
         else:
             sea_level -= 1
-            # print(f"step {sea_level}")
         
         if sea_level == 0 and i == "U":
             valley += 1
