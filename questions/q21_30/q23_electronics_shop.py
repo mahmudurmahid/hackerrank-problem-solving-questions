@@ -16,8 +16,14 @@ def get_money_spent(keyboards, drives, b):
     
     return most_expensive
 
+# alternative solution
+def alt_get_money_spent(keyboards, drives, b):
+    pass
+
 b = 60
 keyboards = [40, 50, 60]
 drives = [5, 8, 12]
 result = get_money_spent(keyboards, drives, b)
 print(result)
+alt_result = alt_get_money_spent(keyboards, drives, b)
+print(alt_result)
