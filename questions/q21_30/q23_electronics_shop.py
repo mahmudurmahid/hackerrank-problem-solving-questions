@@ -18,11 +18,20 @@ def get_money_spent(keyboards, drives, b):
 
 # alternative solution
 def alt_get_money_spent(keyboards, drives, b):
-    pass
+    max_spent = -1
+    
+    for keyboard in keyboards:
+        for drive in drives:
+            total = keyboard + drive
+            if total <= b and total > max_spent:
+                max_spent = total
+    
+    return max_spent
 
 b = 60
 keyboards = [40, 50, 60]
 drives = [5, 8, 12]
+
 result = get_money_spent(keyboards, drives, b)
 print(result)
 alt_result = alt_get_money_spent(keyboards, drives, b)
