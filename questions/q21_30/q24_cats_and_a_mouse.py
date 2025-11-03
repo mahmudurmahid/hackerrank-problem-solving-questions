@@ -9,8 +9,15 @@ def cats_and_mouse(x, y, z):
     else: # cat_a_distance == cat_b_distance
         return "Mouse C"
 
+# alternative solution
+def alt_cats_and_mouse(x, y, z):
+    pass
+
 x = 2
 y = 5
 z = 4
+
 result = cats_and_mouse(x, y, z)
 print(result)
+alt_result = alt_cats_and_mouse
+print(alt_result)
