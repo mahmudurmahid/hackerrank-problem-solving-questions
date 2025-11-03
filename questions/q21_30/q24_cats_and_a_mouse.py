@@ -11,7 +11,12 @@ def cats_and_mouse(x, y, z):
 
 # alternative solution
 def alt_cats_and_mouse(x, y, z):
-    pass
+    if abs(x - z) < abs(y - z):
+        return "Cat A"
+    elif abs(x - z) > abs(y - z):
+        return "Cat B"
+    else:
+        return "Mouse C"
 
 x = 2
 y = 5
@@ -19,5 +24,5 @@ z = 4
 
 result = cats_and_mouse(x, y, z)
 print(result)
-alt_result = alt_cats_and_mouse
+alt_result = alt_cats_and_mouse(x, y, z)
 print(alt_result)
